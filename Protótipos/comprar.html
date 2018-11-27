@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- ========== Meta Tags ========== -->
+    <meta charset="UTF-8" />
+    <meta name="description" content="Cocoon -Portfolio" />
+    <meta name="keywords" content="Cocoon , Portfolio" />
+    <meta name="author" content="Pharaohlab" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <!-- ========== Title ========== -->
+    <title>Próton Desenvolvedoras</title>
+    <!-- ========== Favicon Ico ========== -->
+    <!-- <link rel="icon" href="fav.ico"> -->
+    <!-- ========== STYLESHEETS ========== -->
+    <!-- Bootstrap CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Fonts Icon CSS -->
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="assets/css/et-line.css" rel="stylesheet" />
+    <link href="assets/css/ionicons.min.css" rel="stylesheet" />
+    <!-- Carousel CSS -->
+    <link href="assets/css/slick.css" rel="stylesheet" />
+    <!-- Magnific-popup -->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css" />
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="assets/css/animate.min.css" />
+    <!-- Custom styles for this template -->
+    <link href="assets/css/main.css" rel="stylesheet" />
+
+    <!-- Avalicao -->
+    <link rel="stylesheet" type="text/css" href="assets/css/avaliacao.css">
+  </head>
+  <body>
+    <div class="loader">
+      <div class="loader-outter"></div>
+      <div class="loader-inner"></div>
+    </div>
+
+    <div class="body-container container-fluid">
+      <a class="menu-btn" href="javascript:void(0)">
+        <i class="ion ion-grid"></i>
+      </a>
+      <div class="row justify-content-center">
+        <!-- =================== side menu ==================== -->
+        <div class="col-lg-2 col-md-3 col-12 menu_block">
+          <!-- logo -->
+          <div class="logo_box">
+            <a href="#"> <img src="assets/img/logo.png" alt="cocoon" /> </a>
+          </div>
+          <!-- logo end -->
+
+          <!-- main menu -->
+          <div class="side_menu_section">
+            <ul class="menu_nav">
+              <li><a href="index.html"> Notícias </a></li>
+              <li><a href="about.html"> Sobre nós </a></li>
+              <li><a href="services.html"> Avaliações </a></li>
+              <li><a href="portfolio.html"> Biblioteca </a></li>
+              <li class="active"><a href="atualizacao.html"> Loja </a></li>
+              <li><a href="atualizacao.html"> Atualização </a></li>
+              <li><a href="Cadastro/cadastro.html"> Cadastrar usuário </a></li>
+              <li><a href="Consultar/index.html"> Consultar usuário </a></li>
+              <li><a href="desenvolvedora.html"> Desenvolvedoras </a>
+              </li><li><a href="contact.html"> Contatos </a></li>
+            </ul>
+          </div>
+          <!-- main menu end -->
+        
+
+    
+              <button style="border-radius: 25px; margin-left: 25px;" type="submit" class="btn btn-primary mb-2" data-toggle="collapse" data-target="#demo">
+                Pesquisar
+              </button>
+  
+  <div id="demo" class="collapse">
+   
+              <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Pesquisar"
+                    />
+              </div>
+
+  </div>
+
+          <!-- filter menu end -->
+
+          <!-- social and copyright -->
+          <div class="side_menu_bottom">
+            <div class="side_menu_bottom_inner">
+              <ul class="social_menu">
+                <li>
+                  <a href="#"> <i class="ion ion-social-pinterest"></i> </a>
+                </li>
+                <li>
+                  <a href="#"> <i class="ion ion-social-facebook"></i> </a>
+                </li>
+                <li>
+                  <a href="#"> <i class="ion ion-social-twitter"></i> </a>
+                </li>
+                <li>
+                  <a href="#"> <i class="ion ion-social-dribbble"></i> </a>
+                </li>
+              </ul>
+              <div class="copy_right">
+                <!--
+                  Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0.
+                -->
+                <p class="copyright">
+                  Copyright &copy;<script>
+                    document.write(new Date().getFullYear());
+                  </script>
+                  Direitos |    e Feito com
+                  <i class="fa fa-heart-o" aria-hidden="true"></i> por
+                  <a href="https://github.com/ErickOliveiraT/Trabalho-Final-EngSoft" target="_blank">Próton</a>
+                </p>
+                <!--
+                  Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0.
+                -->
+              </div>
+            </div>
+          </div>
+          <!-- social and copyright end -->
+        </div>        <!--=================== side menu end====================-->
+
+
+
+ <!--=================== Carrinho de compras ====================-->
+
+            <div class="col-lg-10 col-md-9 col-12 text-center">   
+                <button style="border-radius: 10px; margin: 30px 8px 8px 0px;" type="submit" class="btn btn-primary mb-2" data-toggle="collapse" data-target="#Carrinho">
+                Carrinho
+              </button>
+
+               <button style="border-radius: 10px; margin: 30px 8px 8px 0px;" type="submit" class="btn btn-primary mb-2" data-toggle="collapse" data-target="#Cupons_Desc">
+                Cupons Promocionais
+              </button>
+
+              <button style="border-radius: 10px; margin: 30px 8px 8px 0px;" type="submit" class="btn btn-primary mb-2" data-toggle="collapse" data-target="#Desejos">
+                Lista de Desejos
+              </button>
+
+  
+  <div id="Carrinho" class="collapse">
+   
+  <form style="margin-top: 30px;">
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="container">
+
+
+    <section class="content">
+
+        <div class="panel panel-default">
+          <div class="panel-body">
+          
+           
+            <div class="table-container">
+              <table class="table table-filter">
+                <tbody>
+
+
+                  <tr data-status="pagado">
+                    <td>
+                      <div class="ckbox">
+                        <input type="checkbox" id="checkbox1">
+                        <label for="checkbox1"></label>
+                      </div>
+                    </td>
+                    <td>
+                      <a href="javascript:;" class="star">
+                        <i class="glyphicon glyphicon-star"></i>
+                      </a>
+                    </td>
+                    <td>
+                      <div class="media">
+                        <a href="#" class="pull-left">
+                          <img src="assets/img/loja/carrinho/doom.jpg" class="media-photo">
+                        </a>
+                        <div class="media-body">
+                         
+                          <h4 class="title">
+                           Doom
+                            <span class="pull-right pagado">RS 66</span>
+                          </h4>
+                          <p class="summary">Descontos: 10%</p>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+
+                 <tr data-status="pagado">
+                    <td>
+                      <div class="ckbox">
+                        <input type="checkbox" id="checkbox1">
+                        <label for="checkbox1"></label>
+                      </div>
+                    </td>
+                    <td>
+                      <a href="javascript:;" class="star">
+                        <i class="glyphicon glyphicon-star"></i>
+                      </a>
+                    </td>
+                    <td>
+                      <div class="media">
+                        <a href="#" class="pull-left">
+                          <img src="assets/img/loja/carrinho/doom.jpg" class="media-photo">
+                        </a>
+                        <div class="media-body">
+                         
+                          <h4 class="title">
+                           Doom
+                            <span class="pull-right pagado">RS 66</span>
+                          </h4>
+                          <p class="summary">Descontos: 10%</p>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr data-status="pagado">
+                    <td>
+                      <div class="ckbox">
+                        <input type="checkbox" id="checkbox1">
+                        <label for="checkbox1"></label>
+                      </div>
+                    </td>
+                    <td>
+                      <a href="javascript:;" class="star">
+                        <i class="glyphicon glyphicon-star"></i>
+                      </a>
+                    </td>
+                    <td>
+                      <div class="media">
+                        <a href="#" class="pull-left">
+                          <img src="assets/img/loja/carrinho/doom.jpg" class="media-photo">
+                        </a>
+                        <div class="media-body">
+                         
+                          <h4 class="title">
+                           Doom
+                            <span class="pull-right pagado">RS 66</span>
+                          </h4>
+                          <p class="summary">Descontos: 10%</p>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+
+
+             
+                </tbody>
+              </table>
+
+               <div class="btn-group">
+                <button style="border-radius: 10px; margin-left: 10px" type="button" class="btn btn-primary btn-filter" data-target="pagado">Esvaziar</button>
+                <button style="border-radius: 10px; margin-left: 10px" type="button" class="btn btn-primary btn-filter" data-target="all">Comprar Selecionados</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr style="height:2px; border:none; color:#978971; background-color:#978971; margin-top: 0px; margin-bottom: 10px; margin-top: 10px"/>
+
+
+    </section>
+    
+
+</div>
+</form>
+</div>
+
+
+ <!--=================== Localizar atualizacao ====================-->
+  <div id="Desejos" class="collapse">
+   
+  <form style="margin-top: 30px;">
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="container">
+
+
+    <section class="content">
+
+        <div class="panel panel-default">
+          <div class="panel-body">
+          
+           
+            <div class="table-container">
+              <table class="table table-filter">
+                <tbody>
+
+
+                  <tr data-status="pagado">
+                    <td>
+                      <div class="ckbox">
+                        <input type="checkbox" id="checkbox1">
+                        <label for="checkbox1"></label>
+                      </div>
+                    </td>
+                    <td>
+                      <a href="javascript:;" class="star">
+                        <i class="glyphicon glyphicon-star"></i>
+                      </a>
+                    </td>
+                    <td>
+                      <div class="media">
+                        <a href="#" class="pull-left">
+                          <img src="assets/img/loja/carrinho/doom.jpg" class="media-photo">
+                        </a>
+                        <div class="media-body">
+                         
+                          <h4 class="title">
+                           Doom
+                            <span class="pull-right pagado">RS 66</span>
+                          </h4>
+                          <p class="summary">Descontos: 10%</p>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+
+                 <tr data-status="pagado">
+                    <td>
+                      <div class="ckbox">
+                        <input type="checkbox" id="checkbox1">
+                        <label for="checkbox1"></label>
+                      </div>
+                    </td>
+                    <td>
+                      <a href="javascript:;" class="star">
+                        <i class="glyphicon glyphicon-star"></i>
+                      </a>
+                    </td>
+                    <td>
+                      <div class="media">
+                        <a href="#" class="pull-left">
+                          <img src="assets/img/loja/carrinho/doom.jpg" class="media-photo">
+                        </a>
+                        <div class="media-body">
+                         
+                          <h4 class="title">
+                           Doom
+                            <span class="pull-right pagado">RS 66</span>
+                          </h4>
+                          <p class="summary">Descontos: 10%</p>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr data-status="pagado">
+                    <td>
+                      <div class="ckbox">
+                        <input type="checkbox" id="checkbox1">
+                        <label for="checkbox1"></label>
+                      </div>
+                    </td>
+                    <td>
+                      <a href="javascript:;" class="star">
+                        <i class="glyphicon glyphicon-star"></i>
+                      </a>
+                    </td>
+                    <td>
+                      <div class="media">
+                        <a href="#" class="pull-left">
+                          <img src="assets/img/loja/carrinho/doom.jpg" class="media-photo">
+                        </a>
+                        <div class="media-body">
+                         
+                          <h4 class="title">
+                           Doom
+                            <span class="pull-right pagado">RS 66</span>
+                          </h4>
+                          <p class="summary">Descontos: 10%</p>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+
+
+             
+                </tbody>
+              </table>
+
+               <div class="btn-group">
+                <button style="border-radius: 10px; margin-left: 10px" type="button" class="btn btn-primary btn-filter" data-target="pagado">Esvaziar</button>
+                <button style="border-radius: 10px; margin-left: 10px" type="button" class="btn btn-primary btn-filter" data-target="all">Adicionar Ao Carrinho</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr style="height:2px; border:none; color:#978971; background-color:#978971; margin-top: 0px; margin-bottom: 10px; margin-top: 10px"/>
+
+
+    </section>
+    
+
+</div>
+</form>
+</div>
+
+<!--=================== Cupons de desconto ====================-->
+  <div id="Cupons_Desc" class="collapse">
+   
+  <form style="margin-top: 30px;">
+
+    <div class="form-group row">
+      <label for="example-datetime-local-input" class="col-2 col-form-label">Jogo</label>
+      <div class="col-9">
+        <select class="form-control" id="exampleSelect1">
+      <option>Doom</option>
+      <option>The Sims</option>
+      <option>Resident Evil V</option>
+      <option>Snake</option>
+      <option>Lemmings</option>
+      <option>The Legend Of Zelda</option>
+    </select>
+      </div>
+    </div>
+
+
+    <div class="form-group row">
+      <label for="example-datetime-local-input" class="col-2 col-form-label">CPF</label>
+      <div class="col-9">
+        <input class="form-control" type="text" value="111.111.111-11">
+      </div>
+    </div>
+
+
+
+      <div class="form-group row">
+      <label for="example-datetime-local-input" class="col-2 col-form-label">Aniversário</label>
+      <div class="col-9">
+        <input class="form-control" type="date" value="05/08/1999" id="example-datetime-local-input">
+      </div>
+    </div>
+
+  <button type="submit" style="margin-bottom: 20px; border-radius: 10px;" class="text-center btn btn-primary ">Buscar!</button>
+<hr style="height:2px; border:none; color:#978971; background-color:#978971; margin-top: 0px; margin-bottom: 10px; margin-top: 10px"/>
+
+</form>
+</div>
+
+
+ <!--=================== Parte com itens ====================-->
+
+<div class="container" style="margin-top: 20px;>
+
+<div class="card">
+<table class="table table-hover shopping-cart-wrap">
+<thead class="text-muted">
+<tr>
+  <th scope="col">Jogo</th>
+  <th scope="col" width="120">SO (Disponiveis)</th>
+  <th scope="col" width="120">Preco</th>
+  <th scope="col" width="200" class="text-right">Ação</th>
+</tr>
+</thead>
+
+<!--=================== Jogo ====================-->
+<tbody>
+<tr>
+  <td>
+<figure class="media">
+  <div class="img-wrap"><img src="assets/img/loja/snake.jpg" class="img-thumbnail img-sm"></div>
+  <figcaption class="media-body">
+    <h6 class="title text-truncate">Snake</h6>
+    <dl class="param param-inline small">
+      <dt>Gênero: </dt>
+      <dd> Jogo Educativo</dd>
+    </dl>
+    <dl class="param param-inline small">
+      <dt>Lançamento: </dt>
+      <dd>05/08/2017</dd>
+    </dl>
+
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingOne">
+      <h4 class="panel-title">
+        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Descrição
+        </a>
+      </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+      <div class="panel-body">
+        Serpente (Snake, também conhecido como "jogo da cobrinha") é um jogo que ficou conhecido por diversas versões cuja versão inicial começou com o jogo Blockade de 1979, sendo feitas várias imitações em vídeo-games e computadores. No fim dos anos 90 foi popularizado em celulares da Nokia que vinham com o jogo já incluso.
+      </div>
+    </div>
+  </div>
+
+</div>
+
+  </figcaption>
+</figure> 
+  </td>
+  <td> 
+    <select class="form-control">
+      <option>Windows</option>
+      <option>Linux</option>  
+      <option>MacOS</option>  
+      <option>Steam OS</option>  
+    </select> 
+  </td>
+  <td> 
+    <div class="price-wrap"> 
+      <var class="price">RS 95</var> 
+      <small class="text-muted">(10% off)</small> 
+    </div> <!-- price-wrap .// -->
+
+
+  <td class="text-right"> 
+  <a title="" href="" class="btn btn-primary" data-toggle="tooltip" data-original-title="Save to Wishlist"> <i class="fa fa-heart"></i> Desejo...</a> 
+  <a href="" class="btn btn-primary btn-round"> x Remover</a>
+  </td>
+</tr>
+
+
+<tr>
+  <td>
+<figure class="media">
+  <div class="img-wrap"><img src="assets/img/loja/doom.jpg" class="img-thumbnail img-sm">
+  </div>
+  <figcaption class="media-body">
+    <h6 class="title text-truncate">Doom</h6>
+    <dl class="param param-inline small">
+      <dt>Gênero: </dt>
+      <dd>FPS</dd>
+    </dl>
+    <dl class="param param-inline small">
+      <dt>Lançamento: </dt>
+      <dd>05/08/1999</dd>
+    </dl>
+
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingOne">
+      <h4 class="panel-title">
+        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseOne">
+          Descrição
+        </a>
+      </h4>
+    </div>
+    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+      <div class="panel-body">
+        Doom (comercializado como DOOM) é um jogo de computador lançado em 1994 pela id Software e um dos títulos que geraram o gênero tiro em primeira pessoa. Combinando gráficos 3D com violência gráfica e personagens 2D, ele tornou-se tão controverso quanto imensamente popular, com um lançamento em versão shareware que estima-se ter sido jogada por 15 milhões de pessoas. Além de definir muitos elementos dos games de tiro em primeira pessoa, Doom estabeleceu uma sub-cultura por popularizar os jogos em rede e permitir expansões criadas pelos jogadores (arquivos WADs). O sucesso do jogo influenciou o boom de jogos nos anos 90 até chegar ao ponto desses jogos serem algumas vezes chamados de "clones do Doom".
+      </div>
+    </div>
+  </div>
+
+</div>
+
+  </figcaption>
+</figure> 
+  </td>
+  <td> 
+    <select class="form-control">
+      <option>Windows</option>
+      <option>Linux</option>  
+      <option>MacOS</option>  
+      <option>Steam OS</option>  
+    </select> 
+  </td>
+  <td> 
+    <div class="price-wrap"> 
+      <var class="price">RS 66</var> 
+      <small class="text-muted">(10% off)</small> 
+    </div> <!-- price-wrap .// -->
+  </td>
+   <td class="text-right"> 
+  <a title="" href="" class="btn btn-primary" data-toggle="tooltip" data-original-title="Save to Wishlist"> <i class="fa fa-heart"></i> Desejo...</a> 
+  <a href="" class="btn btn-primary btn-round"> x Remover</a>
+  </td>
+</tr>
+
+
+
+<tr>
+  <td>
+<figure class="media">
+  <div class="img-wrap"><img src="assets/img/loja/zelda.jpg" class="img-thumbnail img-sm"></div>
+  <figcaption class="media-body">
+    <h6 class="title text-truncate">The Legend of Zelda </h6>
+    <dl class="param param-inline small">
+      <dt>Gênero: </dt>
+      <dd>Ação e aventura </dd>
+    </dl>
+    <dl class="param param-inline small">
+      <dt>Lançamento: </dt>
+      <dd>05/08/1999</dd>
+    </dl>
+   <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingOne">
+      <h4 class="panel-title">
+        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseOne">
+          Descrição
+        </a>
+      </h4>
+    </div>
+    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+      <div class="panel-body">
+  The Legend of Zelda (ゼルダの伝説, Zeruda no Densetsu?), é uma série de jogos eletrônicos da Nintendo criada em 1986 por Shigeru Miyamoto e Takashi Tezuka. Os jogos se passam no reino de Hyrule, num ambiente de fantasia. A jogabilidade mistura aventura e ação com elementos diversos. A série é muito apreciada por suas tramas complexas, quebra-cabeças, jogabilidade e pela superprodução.
+
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+  </figcaption>
+</figure> 
+  </td>
+  <td> 
+    <select class="form-control">
+      <option>Windows</option>
+      <option>Linux</option>  
+      <option>MacOS</option>  
+      <option>Steam OS</option>  
+    </select> 
+  </td>
+  <td> 
+    <div class="price-wrap"> 
+      <var class="price">RS 24</var> 
+      <small class="text-muted">(10% off)</small> 
+    </div> <!-- price-wrap .// -->
+  </td>
+  <td class="text-right"> 
+  <a title="" href="" class="btn btn-primary" data-toggle="tooltip" data-original-title="Save to Wishlist"> <i class="fa fa-heart"></i> Desejo...</a> 
+  <a href="" class="btn btn-primary btn-round"> x Remover</a>
+  </td>
+</tr>
+
+
+<tr>
+  <td>
+<figure class="media">
+  <div class="img-wrap"><img src="assets/img/loja/lemmings.jpg" class="img-thumbnail img-sm">
+  </div>
+  <figcaption class="media-body">
+    <h6 class="title text-truncate">Lemmings</h6>
+    <dl class="param param-inline small">
+      <dt>Gênero: </dt>
+      <dd>Puzze</dd>
+    </dl>
+    <dl class="param param-inline small">
+      <dt>Lançamento: </dt>
+      <dd>05/08/1999</dd>
+    </dl>
+
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingOne">
+      <h4 class="panel-title">
+        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="true" aria-controls="collapseOne">
+          Descrição
+        </a>
+      </h4>
+    </div>
+    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+      <div class="panel-body">
+        Lemmings é um videojogo de puzzle-plataforma desenvolvido originalmente para Amiga pela DMA Design e editado e lançado pela Psygnosis. Foi convertido para várias plataformas, entre elas, o Super Nintendo, Nintendo, FM Towns, Commodore 64, PC, e posteriormente para PSP. Mais tarde foi lançado Lemmings 2: The Tribes e entre as duas edições, havia diferenças, como os gráficos que foram melhorados, foi incluído explicação para os diferentes tipos de Lemmings que poderiam ser usados, melhoria na jogabilidade, porém o jogo foi mais desafiador em relação ao primeiro título da série, segundo algumas revistas de games da época.
+      </div>
+    </div>
+  </div>
+
+</div>
+
+  </figcaption>
+</figure> 
+  </td>
+  <td> 
+    <select class="form-control">
+      <option>Windows</option>
+      <option>Linux</option>  
+      <option>MacOS</option>  
+      <option>Steam OS</option>  
+    </select> 
+  </td>
+  <td> 
+    <div class="price-wrap"> 
+      <var class="price">RS 78</var> 
+      <small class="text-muted">(10% off)</small> 
+    </div> <!-- price-wrap .// -->
+  </td>
+   <td class="text-right"> 
+  <a title="" href="" class="btn btn-primary" data-toggle="tooltip" data-original-title="Save to Wishlist"> <i class="fa fa-heart"></i> Desejo...</a> 
+  <a href="" class="btn btn-primary btn-round"> x Remover</a>
+  </td>
+</tr>
+
+<tr>
+  <td>
+<figure class="media">
+  <div class="img-wrap"><img src="assets/img/loja/resident.jpg" class="img-thumbnail img-sm">
+  </div>
+  <figcaption class="media-body">
+    <h6 class="title text-truncate">Resident Evil V</h6>
+    <dl class="param param-inline small">
+      <dt>Gênero: </dt>
+      <dd>Survival Horror, Tiro em Terceira Pessoa</dd>
+    </dl>
+    <dl class="param param-inline small">
+      <dt>Lançamento: </dt>
+      <dd>05/08/1999</dd>
+    </dl>
+
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingOne">
+      <h4 class="panel-title">
+        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="true" aria-controls="collapseOne">
+          Descrição
+        </a>
+      </h4>
+    </div>
+    <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+      <div class="panel-body">
+      Resident Evil 4, conhecido no Japão como Biohazard 4 (バイオハザード4, Baiohazādo Fō?), é um jogo eletrônico de survival horror de tiro em terceira pessoa desenvolvido e publicado pela Capcom, lançado originalmente para o Nintendo GameCube em 2005. É o sexto jogo principal da franquia Resident Evil.
+      A história de Resident Evil 4 segue o agente especial do governo dos Estados Unidos Leon S. Kennedy, que é enviado em uma missão para resgatar Ashley Graham, filha do presidente americano, que foi raptada por uma seita macabra. Ele viaja para uma área rural da Espanha, onde luta contra hordas de moradores violentos e monstros mutantes , e se reúne com a misteriosa espiã Ada Wong
+      </div>
+    </div>
+  </div>
+
+</div>
+
+  </figcaption>
+</figure> 
+  </td>
+  <td> 
+    <select class="form-control">
+      <option>Windows</option>
+      <option>Linux</option>  
+      <option>MacOS</option>  
+      <option>Steam OS</option>  
+    </select> 
+  </td>
+  <td> 
+    <div class="price-wrap"> 
+      <var class="price">RS 44</var> 
+      <small class="text-muted">(10% off)</small> 
+    </div> <!-- price-wrap .// -->
+  </td>
+   <td class="text-right"> 
+  <a title="" href="" class="btn btn-primary" data-toggle="tooltip" data-original-title="Save to Wishlist"> <i class="fa fa-heart"></i> Desejo...</a> 
+  <a href="" class="btn btn-primary btn-round"> x Remover</a>
+  </td>
+</tr>
+
+
+<tr>
+  <td>
+<figure class="media">
+  <div class="img-wrap"><img src="assets/img/loja/sims.jpg" class="img-thumbnail img-sm">
+  </div>
+  <figcaption class="media-body">
+    <h6 class="title text-truncate">The Sims</h6>
+    <dl class="param param-inline small">
+      <dt>Gênero: </dt>
+      <dd>Simulação</dd>
+    </dl>
+    <dl class="param param-inline small">
+      <dt>Lançamento: </dt>
+      <dd>05/08/1999</dd>
+    </dl>
+
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingOne">
+      <h4 class="panel-title">
+        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="true" aria-controls="collapseOne">
+          Descrição
+        </a>
+      </h4>
+    </div>
+    <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+      <div class="panel-body">
+        The Sims (Os Sims em Português) é uma série de jogos eletrônicos de simulação de vida real criado pelo designer de jogos Will Wright e produzida pela Maxis. O primeiro jogo da série, The Sims, foi lançado em 4 de fevereiro de 2000. Nos jogos, o jogador cria e controla a vida de pessoas virtuais (chamadas de "Sims") e constrói casas e lotes. O jogo atraiu legiões de fãs, devido a sua simplicidade e objetividade.
+      </div>
+    </div>
+  </div>
+
+</div>
+
+  </figcaption>
+</figure> 
+  </td>
+  <td> 
+    <select class="form-control">
+      <option>Windows</option>
+      <option>Linux</option>  
+      <option>MacOS</option>  
+      <option>Steam OS</option>  
+    </select> 
+  </td>
+  <td> 
+    <div class="price-wrap"> 
+      <var class="price">RS 100</var> 
+      <small class="text-muted">(10% off)</small> 
+    </div> <!-- price-wrap .// -->
+  </td>
+   <td class="text-right"> 
+  <a title="" href="" class="btn btn-primary" data-toggle="tooltip" data-original-title="Save to Wishlist"> <i class="fa fa-heart"></i> Desejo...</a> 
+  <a href="" class="btn btn-primary btn-round"> x Remover</a>
+  </td>
+</tr>
+
+</tbody>
+
+</table>
+</div> <!-- card.// -->
+
+</div> 
+
+              <!-- jquery -->
+              <script src="assets/js/jquery.min.js"></script>
+              <!-- bootstrap -->
+              <script src="assets/js/popper.js"></script>
+              <script src="assets/js/bootstrap.min.js"></script>
+              <script src="assets/js/waypoints.min.js"></script>
+              <!--slick carousel -->
+              <script src="assets/js/slick.min.js"></script>
+              <!--Portfolio Filter-->
+              <script src="assets/js/imgloaded.js"></script>
+              <script src="assets/js/isotope.js"></script>
+              <!-- Magnific-popup -->
+              <script src="assets/js/jquery.magnific-popup.min.js"></script>
+              <!--Counter-->
+              <script src="assets/js/jquery.counterup.min.js"></script>
+              <!-- WOW JS -->
+              <script src="assets/js/wow.min.js"></script>
+              <!-- Custom js -->
+              <script src="assets/js/main.js"></script>
+
+          </body>
+          </html>
