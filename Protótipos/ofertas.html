@@ -135,22 +135,14 @@
 
             <div class="col-lg-10 col-md-9 col-12 text-center">   
                 <button style="border-radius: 10px; margin: 30px 8px 8px 0px;" type="submit" class="btn btn-primary mb-2" data-toggle="collapse" data-target="#Cadastrar">
-                Cadastrar Atualização
+                Cadastrar Oferta
               </button>
 
                <button style="border-radius: 10px; margin: 30px 8px 8px 0px;" type="submit" class="btn btn-primary mb-2" data-toggle="collapse" data-target="#Localizar">
-                Consultar Atualização
-              </button>
-
-               <button style="border-radius: 10px; margin: 30px 8px 8px 0px;" type="submit" class="btn btn-primary mb-2" data-toggle="collapse" data-target="#Localizar">
-                Editar Atualização
-              </button>
-               <button style="border-radius: 10px; margin: 30px 8px 8px 0px;" type="submit" class="btn btn-primary mb-2" data-toggle="collapse" data-target="#Localizar">
-                Excluir Atualização
+                Consultar Oferta
               </button>
 
 
-  
   <div id="Cadastrar" class="collapse">
    
   <form style="margin-top: 30px;">
@@ -169,41 +161,29 @@
     </div>
 
         <div class="form-group row">
-      <label for="example-datetime-local-input" class="col-2 col-form-label">Versão</label>
+      <label for="example-datetime-local-input" class="col-2 col-form-label">Loja</label>
       <div class="col-9">
-        <input class="form-control" type="text" value="1.0">
+        <input class="form-control" type="text" value="Americanas">
       </div>
     </div>
 
 
       <div class="form-group row">
-      <label for="example-datetime-local-input" class="col-2 col-form-label">Data</label>
+      <label for="example-datetime-local-input" class="col-2 col-form-label">Preço</label>
       <div class="col-9">
-        <input class="form-control" type="date" value="25/11/2019" id="example-datetime-local-input">
+        <input class="form-control" type="date" value="99.99 R$" id="example-datetime-local-input">
       </div>
     </div>
 
 
     <div class="form-group row">
-      <label for="example-datetime-local-input" class="col-2 col-form-label">Genero</label>
+      <label for="example-datetime-local-input" class="col-2 col-form-label">Link Da Loja</label>
       <div class="col-9">
-        <select class="form-control" id="exampleSelect1">
-      <option>Genero 1</option>
-      <option>Genero 2</option>
-      <option>Genero 3</option>
-      <option>Genero 4</option>
-      <option>Genero 5</option>
-    </select>
+        <input class="form-control" type="text" value="americanas.com.br">
       </div>
     </div>
 
-    <div class="form-group row">
-      <label for="example-datetime-local-input" class="col-2 col-form-label">Descrição</label>
-
-      <div class="col-9">
-   <textarea class="form-control" id="exampleTextarea" rows="2"></textarea>
-      </div>
-    </div>
+ 
 
 
 
@@ -217,40 +197,114 @@
  <!--=================== Localizar atualizacao ====================-->
   <div id="Localizar" class="collapse">
    
-  <form style="margin-top: 30px;">
+ <form style="margin-top: 30px;">
 
     <div class="form-group row">
       <label for="example-datetime-local-input" class="col-2 col-form-label">Jogo</label>
       <div class="col-9">
         <select class="form-control" id="exampleSelect1">
-      <option>Jogo 1</option>
-      <option>Jogo 2</option>
-      <option>Jogo 3</option>
-      <option>Jogo 4</option>
-      <option>Jogo 5</option>
+      <option>Doom</option>
+      <option>The Sims</option>
+      <option>Resident Evil V</option>
+      <option>Snake</option>
+      <option>Lemmings</option>
+      <option>The Legend Of Zelda</option>
     </select>
       </div>
     </div>
 
 
     <div class="form-group row">
-      <label for="example-datetime-local-input" class="col-2 col-form-label">Versão</label>
+      <label for="example-datetime-local-input" class="col-2 col-form-label">Loja</label>
       <div class="col-9">
-        <input class="form-control" type="text" value="1.0">
+        <input class="form-control" type="text" value="Próton">
       </div>
     </div>
 
+   <button style="border-radius: 10px; margin: 30px 8px 8px 0px;" type="submit" class="btn btn-primary mb-2" data-toggle="collapse" data-target="#Consulta">
+                Buscar
+              </button>
 
-
-      <div class="form-group row">
-      <label for="example-datetime-local-input" class="col-2 col-form-label">Data</label>
-      <div class="col-9">
-        <input class="form-control" type="date" value="25/11/2019" id="example-datetime-local-input">
-      </div>
-    </div>
-
-  <button type="submit" style="margin-bottom: 20px; border-radius: 10px;" class="text-center btn btn-primary ">Buscar!</button>
 <hr style="height:2px; border:none; color:#978971; background-color:#978971; margin-top: 0px; margin-bottom: 10px; margin-top: 10px"/>
+
+
+
+</form>
+</div>
+
+
+ <div id="Consulta" class="collapse">
+   
+ <form style="margin-top: 30px; padding-right: 45px;">
+
+    
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script>
+
+<div class="container">
+  <div class="row">
+    
+        
+        <div class="col-md-12">
+        <div class="table-responsive">
+
+                
+              <table id="mytable" class="table table-bordred table-striped">
+                   
+                   <thead>
+                   
+                   <th><input type="checkbox" id="checkall" /></th>
+                   <th>Nome</th>
+                    <th>Preço</th>
+                     <th>Loja</th>
+                     <th>Link</th>
+
+                      <th>Alterar</th>
+                      
+                       <th>Remover</th>
+                   </thead>
+    <tbody>
+    
+
+ <tr>
+    <td><input type="checkbox" class="checkthis" /></td>
+    <td>Doom</td>
+    <td>66 R$</td>
+    <td>Americanas</td>
+    <td>americanas.com.br</td>
+   
+    <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil"></span></button></p></td>
+    <td><p data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash"></span></button></p></td>
+    </tr>
+    
+    
+    
+ <tr>
+    <td><input type="checkbox" class="checkthis" /></td>
+    <td>The Sims</td>
+    <td>100 R$</td>
+    <td>Americanas</td>
+    <td>americanas.com.br</td>
+
+   
+    <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil"></span></button></p></td>
+    <td><p data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash"></span></button></p></td>
+    </tr>
+    
+    
+
+   
+    
+   
+    
+    </tbody>
+        
+</table>
+
+<a style="background-color: #918660; color: #fff; border-color: #918660; border-radius: 25px; margin: 30px 8px 8px 0px;" href="comprar.html" class="col-md-4 text-center btn btn-primary mb-2" role="button"><span class="fa fa-long-arrow-left"></span> Voltar </a>
+
+
+
 
 </form>
 </div>
@@ -258,309 +312,8 @@
 
  <!--=================== Cartao com jogo 1====================-->
   <div class="col-lg-10 col-md-9 col-12">  
-     </div>
 
-                <div class="card" style=" border-radius: 10px; margin: 20px 0px 0px 0px;">
-                  <div class="row ">
-
-                    <div class="col-md-4">
-                        <button type="button" style="border-radius: 10px 0px 0px 0px;" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#myModal1">Far Cry 5</button>
-
-                        <img src="assets/img/avaliacao/port4.png" style=" border-radius: 0px 0px 0px 0px">
-
-                        <button type="button" style="border-radius: 0px 0px 0px 10px;" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#myModal">Editar Última</button>
-                    </div>
-
-                    <div class="col-md-8 px-3">
-
-
-                        <table class="table table-hover">
-                            <thead>
-                                <tr>
-                                    <th>Atualização</th>
-                                    <th>Data de Lancamento</th>
-                                    <th>Atualizado Em</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>1.0.1</td>
-                                    <td><span> 05/08/1999 </span>
-                                        <td><span> 05/08/2000</span>
-                                    </td>
-                                </tr>
-                                  <tr>
-                                    <td>1.0.2</td>
-                                    <td><span> 05/08/2000 </span>
-                                        <td><span> 05/08/2001</span>
-                                    </td>
-                                </tr>
-                                  <tr>
-                                    <td>1.0.3</td>
-                                    <td><span> 05/08/2001 </span>
-                                        <td><span> 05/08/2002</span>
-                                    </td>
-                                </tr>
-                                  <tr>
-                                    <td>1.0.4</td>
-                                    <td><span> 05/08/2002 </span>
-                                        <td><span> 05/08/2003</span>
-                                    </td>
-                                </tr>
-                                                            </tbody>
-                                   </table>
-
-                        </div>
-
-                                                </div>
-
-                                            </div>
-                                            <div class="card" style=" border-radius: 10px; margin: 30px 0px 0px 0px;">
-                  <div class="row ">
-
-                    <div class="col-md-4">
-                        <button type="button" style="border-radius: 10px 0px 0px 0px;" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#myModal2">Fallout 4</button>
-
-                        <img src="assets/img/avaliacao/port7.png" style=" border-radius: 0px 0px 0px 0px">
-
-                        <button type="button" style="border-radius: 0px 0px 0px 10px;" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#myModal">Editar Última</button>
-                    </div>
-
-                    <div class="col-md-8 px-3">
-
-
-                        <table class="table table-hover">
-                            <thead>
-                                <tr>
-                                    <th>Atualização</th>
-                                    <th>Data de Lancamento</th>
-                                    <th>Atualizado Em</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>1.0.1</td>
-                                    <td><span> 05/08/1999 </span>
-                                        <td><span> 05/08/2000</span>
-                                    </td>
-                                </tr>
-                                  <tr>
-                                    <td>1.0.2</td>
-                                    <td><span> 05/08/2000 </span>
-                                        <td><span> 05/08/2001</span>
-                                    </td>
-                                </tr>
-                                  <tr>
-                                    <td>1.0.3</td>
-                                    <td><span> 05/08/2001 </span>
-                                        <td><span> 05/08/2002</span>
-                                    </td>
-                                </tr>
-                                  <tr>
-                                    <td>1.0.4</td>
-                                    <td><span> 05/08/2002 </span>
-                                        <td><span> 05/08/2003</span>
-                                    </td>
-                                </tr>
-                                                            </tbody>
-                                   </table>
-
-                        </div>
-
-                                                </div>
-                                                
-                                            </div>
-                                            <div class="card" style=" border-radius: 10px; margin: 30px 0px 0px 0px;">
-                  <div class="row ">
-
-                    <div class="col-md-4">
-                        <button type="button" style="border-radius: 10px 0px 0px 0px;" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#myModal3">Skyrim</button>
-
-                        <img src="assets/img/avaliacao/port8.png" style=" border-radius: 0px 0px 0px 0px">
-
-                        <button type="button" style="border-radius: 0px 0px 0px 10px;" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#myModal">Editar Última</button>
-                    </div>
-
-                <div class="col-md-8 px-3">
-
-
-                        <table class="table table-hover">
-                            <thead>
-                                <tr>
-                                    <th>Atualização</th>
-                                    <th>Data de Lancamento</th>
-                                    <th>Atualizado Em</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>1.0.1</td>
-                                    <td><span> 05/08/1999 </span>
-                                        <td><span> 05/08/2000</span>
-                                    </td>
-                                </tr>
-                                  <tr>
-                                    <td>1.0.2</td>
-                                    <td><span> 05/08/2000 </span>
-                                        <td><span> 05/08/2001</span>
-                                    </td>
-                                </tr>
-                                  <tr>
-                                    <td>1.0.3</td>
-                                    <td><span> 05/08/2001 </span>
-                                        <td><span> 05/08/2002</span>
-                                    </td>
-                                </tr>
-                                  <tr>
-                                    <td>1.0.4</td>
-                                    <td><span> 05/08/2002 </span>
-                                        <td><span> 05/08/2003</span>
-                                    </td>
-                                </tr>
-                                                            </tbody>
-                                   </table>
-
-                        </div>
-
-                                                </div>
-                                                
-                                            </div>
-                                        </div>
-
-                                        <!--=================== Cartao 1 termina aqui ====================-->
-
-                                    </div>
-
-
-                                </div>
-
-                            </div>
-
-
-
-                            <!-- Modal -->
-                            <div class="modal fade" id="myModal" role="dialog">
-                                <div class="modal-dialog modal-lg">
-                                  <div class="modal-content">
-                                    <div class="modal-header">
-                                      <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                      <h4 class="modal-title">Editar</h4>
-                                  </div>
-                                  <div class="col-lg-10 col-md-9 col-12 text-center"> 
-                                 <form style="margin-top: 30px;">
-
-
-        <div class="form-group row">
-      <label for="example-datetime-local-input" class="col-2 col-form-label">Versão</label>
-      <div class="col-10">
-        <input class="form-control" type="text" value="1.0.1">
-      </div>
-    </div>
-
-
-      <div class="form-group row">
-      <label for="example-datetime-local-input" class="col-2 col-form-label">Data</label>
-      <div class="col-10">
-        <input class="form-control" type="date" value="05/08/1999" id="example-datetime-local-input">
-      </div>
-    </div>
-
-
-    <div class="form-group row">
-      <label for="example-datetime-local-input" class="col-2 col-form-label">Descrição</label>
-
-      <div class="col-10">
-   <textarea class="form-control" id="exampleTextarea" rows="2"></textarea>
-      </div>
-    </div>
-
-
-</form>
-</div>
-                                 <div class="modal-footer">
-
-                                    <div class="col-md-10 px-3">
-
-                                                 <span class="fa fa-times excluir"> Excluir Atualização</span>
-                                  </div>
-                                 
-                                  <button type="button" class="btn btn-primary" data-dismiss="modal">Salvar</button>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-
-                  <!-- Modal -->
-                            <div class="modal fade" id="myModal1" role="dialog">
-                                <div class="modal-dialog modal-lg">
-                                  <div class="modal-content">
-                                    <div class="modal-header">
-                                      <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                      <h4 class="modal-title">Descrição</h4>
-                                  </div>
-                                  <div class="modal-body">
-                                     Far Cry 5 é um jogo eletrônico de tiro em primeira pessoa de ação-aventura ambientado em um mundo aberto. Foi desenvolvido pela Ubisoft Montreal e publicado pela Ubisoft para Microsoft Windows, PlayStation 4 e Xbox One em 27 de março de 2018. É o décimo titulo da serie Far Cry e o quinto jogo principal.[3]
-
-                                    Em Far Cry 5 o jogador assume o papel de um delegado de xerife que foi enviado ao condado fictício de Hope County, em Montana, para prender Joseph Seed (chamado de "O Pai" por seus seguidores, os "Edenetes"). Seed é um pregador radical que acredita que foi escolhido por Deus para proteger o povo de Hope County de um "colapso inevitável". Ele é o criador e líder da seita cristã "Projeto do Portão do Éden", um culto apocalíptico religioso e militar.
-                                     <br>
-                                 </div>
-                                 <div class="modal-footer">
-                                  <button type="button" class="btn btn-primary" data-dismiss="modal">Visto</button>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-
-              </div>
-
-              <!-- Modal -->
-                            <div class="modal fade" id="myModal2" role="dialog">
-                                <div class="modal-dialog modal-lg">
-                                  <div class="modal-content">
-                                    <div class="modal-header">
-                                      <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                      <h4 class="modal-title">Descrição</h4>
-                                  </div>
-                                  <div class="modal-body">
-                                     Fallout 4 é um jogo eletrônico do gênero RPG de ação ambientado em mundo aberto produzido pela Bethesda Game Studios, sendo o quinto título principal da série Fallout. O game foi lançado para Microsoft Windows, PlayStation 4 e Xbox One no dia 10 de Novembro de 2015 pela Bethesda Softworks.
-
-                                    O jogador assume um personagem referido como "Sole Survivor" ("sobrevivente solitário"), que emerge da Vault 111 (traduzido como "refúgio"), um abrigo nuclear subterrâneo. Após o personagem testemunhar a morte do seu cônjuge e o sequestro do filho, o "sobrevivente solitário" viaja pela Commonwealth de Massachusetts, nas áreas ao redor de Boston. O jogo é baseado em sistema de RPG, de modo single player, com exploração de mundo aberto. Fallout 4 é o primeiro jogo da franquia em que o protagonista tem voz.
-                                     <br>
-                                 </div>
-                                 <div class="modal-footer">
-                                  <button type="button" class="btn btn-primary" data-dismiss="modal">Visto</button>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-
-              </div>
-
-              <!-- Modal -->
-                            <div class="modal fade" id="myModal3" role="dialog">
-                                <div class="modal-dialog modal-lg">
-                                  <div class="modal-content">
-                                    <div class="modal-header">
-                                      <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                      <h4 class="modal-title">Descrição</h4>
-                                  </div>
-                                  <div class="modal-body">
-                                     The Elder Scrolls V: Skyrim é um RPG eletrônico desenvovido pela Bethesda Games Studios e publicado pela The Elders Scrolls. É o quinto jogo principal da série The Elder Scrolls, seguindo The Elder Scrolls IV: Oblivion. Foi lançado em 11 de novembro de 2011 para PlayStation 3, Xbox 360 e Microsoft Windows. É o primeiro jogo ocidental da história a receber 40/40 (nota máxima) na conceituada BGS. O Jogo Conseguiu três prêmios no VGA 2011, incluindo melhor jogo do ano.
-
-                                    Os acontecimentos do jogo passam-se duzentos anos depois da, já quase esquecida, crise de Oblivion, no ano 201 da quarta era (4E 201) na província de Skyrim, no norte de Tamriel, e 30 anos após a mais recente Grande Guerra, onde o Aldmeri Dominion e o Império lutaram arduamente, mas que quase extinguiu os humanos de Tamriel, e para evitar tal derrota, acordaram com a Aldmeri Dominion, rendendo duas forças e sujeitando-se as suas exigências.
-                                                                         <br>
-                                 </div>
-                                 <div class="modal-footer">
-                                  <button type="button" class="btn btn-primary" data-dismiss="modal">Visto</button>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-
-              </div>
-
-
-
+  </div>
 
               <!-- jquery -->
               <script src="assets/js/jquery.min.js"></script>
