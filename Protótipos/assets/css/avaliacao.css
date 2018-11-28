@@ -1,0 +1,8 @@
+.checked {
+    color: orange;
+}
+
+.excluir {
+	color: red;
+	margin-left: 15px;
+}
