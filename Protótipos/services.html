@@ -146,7 +146,7 @@
               </button>
 
                <button style="border-radius: 10px; margin: 30px 8px 8px 0px;" type="submit" class="btn btn-primary mb-2" data-toggle="collapse" data-target="#Localizar">
-                Editar Atualização
+                Mais Jogados
               </button>
                <button style="border-radius: 10px; margin: 30px 8px 8px 0px;" type="submit" class="btn btn-primary mb-2" data-toggle="collapse" data-target="#Localizar">
                 Excluir Atualização
@@ -155,20 +155,19 @@
 
 <!-- Control buttons -->
 <div id="myBtnContainer">
-  <button class="btn active" onclick="filterSelection('all')"> Todos</button>
-  <button class="btn" onclick="filterSelection('cars')"> Cars</button>
-  <button class="btn" onclick="filterSelection('animals')"> Animals</button>
-  <button class="btn" onclick="filterSelection('fruits')"> Fruits</button>
-  <button class="btn" onclick="filterSelection('colors')"> Colors</button>
+  <button style="border-radius: 10px;" class="btn active" onclick="filterSelection('all')"> Todos</button>
+  <button style="border-radius: 10px;"  class="btn" onclick="filterSelection('cars')"> Cars</button>
+  <button style="border-radius: 10px;"  class="btn" onclick="filterSelection('animals')"> Animals</button>
+  <button style="border-radius: 10px;"  class="btn" onclick="filterSelection('fruits')"> Fruits</button>
+  <button style="border-radius: 10px;"  class="btn" onclick="filterSelection('colors')"> Colors</button>
 </div>
 
 <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
 <div class="container">
+<!-- Elemento 1 inicia aqui -->
+  <div class="filterDiv animals"><div class="nome_jogo">Fallout 4</div><!--=================== Cartao com jogo 2 Inicia aqui ====================-->
 
-  <div class="filterDiv fruits animals">Kiwi</div>
-  <div class="filterDiv animals">Fallout 4<!--=================== Cartao com jogo 2 Inicia aqui ====================-->
-
-                                            <div class="card" style=" border-radius: 10px; margin: 0px 0px 0px 0px;">
+                                            <div class="card" style=" border-radius: 0px; margin: 0px 0px 0px 0px;">
                   <div class="row ">
 
                     <div class="col-md-4">
@@ -250,36 +249,48 @@
 
                                                 </div>
 
-<div class="col-lg-10 col-md-9 col-12 text-center">   
-
-<button style="border-radius: 10px; margin: 0px 20px 20px 0px;" type="submit" class="btn btn-primary mb-2" data-toggle="collapse" data-target="#Avaliacao1">
-               Descrição
-              </button>
-<button style="border-radius: 10px; margin: 0px 20px 20px 0px;" type="submit" class="btn btn-primary mb-2" data-toggle="modal" data-target="#myModal">
-                Avaliar
-              </button>
-
-<button style="border-radius: 10px; margin: 0px 20px 20px 0px;" type="submit" class="btn btn-primary mb-2" data-toggle="collapse" data-target="#Avaliacao1">
-                Exibir Comentários
-              </button>
-
 
 
 </div>
+<div class="col-lg-12 col-md-9 col-12 text-center">  
+
+  
+
+  <div class="btn-group">
+    <button style="border-radius: 10px; margin: 0px 0px 0px 0px;" type="submit" class="btn  mb-2" data-toggle="modal" data-target="#myModal">
+                Avaliar
+              </button>
+  </div>
+  <div class="btn-group">
+   
+<button style="border-radius: 10px; margin: 0px 0px 0px 0px;" type="submit" class="btn  mb-2" data-toggle="collapse" data-target="#Avaliacao1">
+                Exibir Comentários
+              </button>
+  </div>
+
+
+ 
+  <div class="btn-group">
+    <button style="border-radius: 10px; margin: 0px 0px 0px 0px;" type="submit" class="btn  mb-2" data-toggle="modal" data-target="#myModal2">
+                Descrição
+              </button>
+  </div>
+
+
 
 <!-- Comentario comeca aqui pt 1-->   
 
  <div id="Avaliacao1" class="collapse">
    
-  <form style="margin-top: 30px;">
+  <form style="margin-top: 0px;">
 
 <div class="container">
 
 
-    <section class="content">
+    <section style="padding-left: 0px; margin-bottom: 30px; margin-right: 15px;" class="content">
 
 <!-- Comentario comeca aqui-->        
-  <div class="card">
+  <div style="margin: 0px;" class="card">
       <div class="card-body">
           <div class="row">
               <div class="col-md-2">
@@ -298,12 +309,12 @@
                  <div class="clearfix"></div>
                   <p>A capa do jogo é interessante, porém eu nunca joguei! Mas tenho um gosto peculiar por avaliar as coisas aleatoriamente! Veio à minha mente a nota 4 estrelas.. então é isso aí! Espero ter ajudado. =D</p>
                   <p>
-                      <a class="float-right btn btn-outline-primary ml-2"> <i class="fa fa-reply"></i> Reply</a>
-                      <a class="float-right btn text-white btn-danger"> <i class="fa fa-heart"></i> Like</a>
+                      <a style="border-radius: 10px;"class="float-right btn btn-outline-primary ml-2"> <i class="fa fa-reply"></i> Responder</a>
+                      <a style="border-radius: 10px;"class="float-right btn text-white btn-danger"> <i class="fa fa-heart"></i> Like</a>
                  </p>
               </div>
           </div>
-            <div class="card card-inner">
+            <div style="margin-top: 20px;" class="card card-inner">
                   <div class="card-body">
                       <div class="row">
                           <div class="col-md-2">
@@ -314,8 +325,8 @@
                               <p><strong>Felippe - ibotuku</strong></p>
                               <p>Sua opinião foi decisiva para eu baixar esse jogo ilegalmente no the pirate bay. Realmente é um jogo muito bom! Se não fosse pelos posts pornográficos que isso me rendeu no facebook eu até avaliaria melhor... Utilize você também a incrível barra de ferramentas Ibotuku (ibotuku.com.xxx)</p>
                               <p>
-                                  <a class="float-right btn btn-outline-primary ml-2">  <i class="fa fa-reply"></i> Responder</a>
-                                  <a class="float-right btn text-white btn-danger"> <i class="fa fa-heart"></i> Like</a>
+                                  <a style="border-radius: 10px;" class="float-right btn btn-outline-primary ml-2">  <i class="fa fa-reply"></i> Responder</a>
+                                  <a style="border-radius: 10px;"class="float-right btn text-white btn-danger"> <i class="fa fa-heart"></i> Like</a>
                              </p>
                           </div>
                       </div>
@@ -331,15 +342,62 @@
 </div>
 </form>
 </div>
-<!--=================== Comentarios finalizam aqui ====================-->
+
+
+  <!-- Modal -->
+                            <div class="modal fade" id="myModal2" role="dialog">
+                                <div class="modal-dialog modal-lg">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                      <h4 class="modal-title">Descrição</h4>
+                                  </div>
+                                  <div class="modal-body">
+                                     Fallout 4 é um jogo eletrônico do gênero RPG de ação ambientado em mundo aberto produzido pela Bethesda Game Studios, sendo o quinto título principal da série Fallout. O game foi lançado para Microsoft Windows, PlayStation 4 e Xbox One no dia 10 de Novembro de 2015 pela Bethesda Softworks.
+
+                                    O jogador assume um personagem referido como "Sole Survivor" ("sobrevivente solitário"), que emerge da Vault 111 (traduzido como "refúgio"), um abrigo nuclear subterrâneo. Após o personagem testemunhar a morte do seu cônjuge e o sequestro do filho, o "sobrevivente solitário" viaja pela Commonwealth de Massachusetts, nas áreas ao redor de Boston. O jogo é baseado em sistema de RPG, de modo single player, com exploração de mundo aberto. Fallout 4 é o primeiro jogo da franquia em que o protagonista tem voz.
+                                     <br>
+                                 </div>
+                                 <div class="modal-footer">
+                                  <button style="border-radius: 10px;"type="button" class="btn btn-primary" data-dismiss="modal">Visto</button>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+
+              </div>
+
+                                            </div><!--=================== Elemento 1 termina aqui ====================-->
 
 
 
 
-                                            </div>
 
-<!--=================== Cartao com jogo 2 Finaliza aqui ====================--></div>
-  <div class="filterDiv fruits">    Skyrin                                     <div class="card" style=" border-radius: 10px; margin: 0px 0px 0px 0px;">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--=================== Teste somente partte de cima Cartao com jogo 2 Finaliza aqui ====================--></div>
+  <div class="filterDiv fruits"><div class="nome_jogo">    Skyrin   </div>                                  <div class="card" style=" border-radius: 10px; margin: 0px 0px 0px 0px;">
                   <div class="row ">
 
                     <div class="col-md-4">
@@ -528,6 +586,29 @@
           </div>
 
 
+  <!-- Jogo 1 -->
+                            <div class="modal fade" id="myModalJ1" role="dialog">
+                                <div class="modal-dialog modal-lg">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                      <h4 class="modal-title">Avaliar</h4>
+                                  </div>
+                                  <div class="modal-body">
+                                     Jogo 1
+                                 </div>
+                                 <div class="modal-footer">
+
+                                    <div class="col-md-10 px-3">
+
+                                                 <span class="fa fa-times excluir"> Excluir Avaliacao</span>
+                                  </div>
+                                 
+                                  <button type="button" class="btn btn-primary" data-dismiss="modal">Salvar</button>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
 
                             <!-- Modal -->
                             <div class="modal fade" id="myModal" role="dialog">
@@ -566,7 +647,7 @@
                                                  <span class="fa fa-times excluir"> Excluir Avaliacao</span>
                                   </div>
                                  
-                                  <button type="button" class="btn btn-primary" data-dismiss="modal">Salvar</button>
+                                  <button style="border-radius: 10px;"type="button" class="btn btn-primary" data-dismiss="modal">Salvar</button>
                               </div>
                           </div>
                       </div>
@@ -587,7 +668,7 @@
                                      <br>
                                  </div>
                                  <div class="modal-footer">
-                                  <button type="button" class="btn btn-primary" data-dismiss="modal">Visto</button>
+                                  <button style="border-radius: 10px;"type="button" class="btn btn-primary" data-dismiss="modal">Visto</button>
                               </div>
                           </div>
                       </div>
@@ -595,28 +676,7 @@
 
               </div>
 
-              <!-- Modal -->
-                            <div class="modal fade" id="myModal2" role="dialog">
-                                <div class="modal-dialog modal-lg">
-                                  <div class="modal-content">
-                                    <div class="modal-header">
-                                      <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                      <h4 class="modal-title">Descrição</h4>
-                                  </div>
-                                  <div class="modal-body">
-                                     Fallout 4 é um jogo eletrônico do gênero RPG de ação ambientado em mundo aberto produzido pela Bethesda Game Studios, sendo o quinto título principal da série Fallout. O game foi lançado para Microsoft Windows, PlayStation 4 e Xbox One no dia 10 de Novembro de 2015 pela Bethesda Softworks.
-
-                                    O jogador assume um personagem referido como "Sole Survivor" ("sobrevivente solitário"), que emerge da Vault 111 (traduzido como "refúgio"), um abrigo nuclear subterrâneo. Após o personagem testemunhar a morte do seu cônjuge e o sequestro do filho, o "sobrevivente solitário" viaja pela Commonwealth de Massachusetts, nas áreas ao redor de Boston. O jogo é baseado em sistema de RPG, de modo single player, com exploração de mundo aberto. Fallout 4 é o primeiro jogo da franquia em que o protagonista tem voz.
-                                     <br>
-                                 </div>
-                                 <div class="modal-footer">
-                                  <button type="button" class="btn btn-primary" data-dismiss="modal">Visto</button>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-
-              </div>
+            
 
               <!-- Modal -->
                             <div class="modal fade" id="myModal3" role="dialog">
@@ -633,7 +693,7 @@
                                                                          <br>
                                  </div>
                                  <div class="modal-footer">
-                                  <button type="button" class="btn btn-primary" data-dismiss="modal">Visto</button>
+                                  <button style="border-radius: 10px;" type="button" class="btn btn-primary" data-dismiss="modal">Visto</button>
                               </div>
                           </div>
                       </div>

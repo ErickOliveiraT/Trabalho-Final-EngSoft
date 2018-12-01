@@ -4,12 +4,18 @@
     padding-right: 0px;
 }
 
+.nome_jogo{
+  color: white;
+  padding: 10px;
+}
+
 .filterDiv {
-    float: left;
+    padding: 0px;
+    float: center;
     background-color: #978971;
-    color: #ffffff;
+    color: #9C9CA8;
     text-align: center;
-    margin: 2px;
+    margin-top:20px;
     border-radius: 10px;
     display: none; /* Hidden by default */
 }
@@ -23,14 +29,15 @@
 .btn {
   border: none;
   outline: none;
- 
+ margin-bottom: 0px;
   background-color: #978971;
   cursor: pointer;
 }
 
 /* Add a light grey background on mouse-over */
 .btn:hover {
-  background-color: #ddd;
+  background-color: #978971;
+  border-color: #978971;
 }
 
 /* Add a dark background to the active button */
