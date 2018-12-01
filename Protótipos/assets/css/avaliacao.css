@@ -49,4 +49,10 @@ var {
     max-height: 75px;
     object-fit: cover;
 }
-
+.redondo {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+}
