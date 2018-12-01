@@ -16,6 +16,7 @@
     color: #9C9CA8;
     text-align: center;
     margin-top:20px;
+    margin-bottom:20px;
     border-radius: 10px;
     display: none; /* Hidden by default */
 }
